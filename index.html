@@ -1,1 +1,42 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comparison Test</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		.input_area {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#column_name {
+			width: 80px;
+			height: 40px;
+		}
+		#inputimg {
+			width: 400px;
+			height: 600px;
+		}
+	</style>
+</head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src='bbcode.js'></script>
+<script type="text/javascript" src='mousetrap.min.js'></script>
+<script>
+	function show_comparison(object){
+		var comparison_content = $("#inputimg").val().split('\n');
+		var comparison_column = $("#column_name").val().split('\n');
+		console.log(comparison_content);
+		BBCode.ScreenshotComparisonToggleShow(this, comparison_column, comparison_content)
+	}
+</script>
+
+<body>
+<p><textarea id="column_name" class="input_area">1
+3</textarea></p>
+<p><textarea id="inputimg"  class="input_area">https://ptpimg.me/7y24p1.png
+https://ptpimg.me/06akx8.png</textarea></p>
+<p><input type="button" name="test" value="Test Your Comparison" onclick="show_comparison(this);" class="input_area"></p>
+</body>
+
+</html>
