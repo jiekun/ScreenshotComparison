@@ -28,7 +28,7 @@ def save_screenshot_urls():
     value = is_jsonable(save_content)
     if value:
         redis.set(comparison_code, value)
-        redirect_url = SITE_URL + "/checker.html?c=" + comparison_code
+        redirect_url = 'http://' + SITE_URL + "/checker.html?c=" + comparison_code
         return redirect(redirect_url, code=302)
     else:
         return Response('Invalid JSON', status=400, mimetype='application/json')
