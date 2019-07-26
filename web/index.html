@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Comparison Test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		.input_area {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#column_name {
+			width: 80px;
+			height: 40px;
+		}
+		#inputimg {
+			width: 400px;
+			height: 600px;
+		}
+	</style>
+</head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src='js/bbcode.js'></script>
+<script type="text/javascript" src='js/mousetrap.min.js'></script>
+<body>
+<p>All credit goes to the developers on PassThePopcorn. </p>
+<form id="comparison" action="/api/comparison/generator/" method="post">
+    <textarea name="column" form="comparison"></textarea>
+    <textarea name="comparison_urls" form="comparison"></textarea>
+    <input type="submit" value="获取对比链接">
+</form>
+</body>
+
+</html>
