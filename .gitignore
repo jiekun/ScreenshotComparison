@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 config.py
 .idea/
+web/2014bduck.github.io/
 # C extensions
 *.so
 
