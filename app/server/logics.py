@@ -36,7 +36,7 @@ def receive_urls(urls, columns):
 
         if value:
             redis.set(comparison_code, value)
-            redirect_url = 'http://' + SITE_URL + "/checker?c=" + comparison_code
+            redirect_url = 'https://' + SITE_URL + "/checker?c=" + comparison_code
             success, redirect_url = True, redirect_url
         else:
             success, redirect_url = False, ''
