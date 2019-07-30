@@ -46,6 +46,11 @@ def receive_urls(urls, columns):
 
 
 def get_urls(comparison_code):
+    """
+    Get comparison urls and field by code
+    :param comparison_code:
+    :return:
+    """
     try:
         saved_content = redis.get(comparison_code)
         saved_content = json.loads(saved_content)
@@ -106,6 +111,12 @@ def validate_urls(urls):
 
 
 def validate_compare_field(urls, columns):
+    """
+    Validate if urls match columns
+    :param urls:
+    :param columns:
+    :return:
+    """
     try:
         if isinstance(columns, str):
             if columns == '':
