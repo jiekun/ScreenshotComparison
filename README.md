@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> a6f07a221e6b638e7cdcd8393fb9262c82914990
 # Screenshot Comparison
 ## Intro
 This tool stores the screenshot urls and display in comparison mode.
@@ -50,7 +53,7 @@ server {
         index index.html index.htm index.nginx-debian.html;
         server_name comparison.sample.cc;
 		
-		# Static HTML or JS files
+	# Static HTML or JS files
         location / {
                 try_files $uri.html $uri/ =404;
         }
@@ -68,7 +71,7 @@ server {
         }
 		
 		
-		# Pass the request to a uwsgi server port/sock
+	# Pass the request to a uwsgi server port/sock
         location /api/ {
                 proxy_pass http://127.0.0.1:5050/api/;
         }

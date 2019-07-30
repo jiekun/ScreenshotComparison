@@ -42,10 +42,10 @@ var ScreenshotComparison = (function () {
                 this.LightBox.on("scroll", function () {
                     instance.UpdateLabel();
                 });
-                this.LightBox.click(function (event) {
-                    if (!$jq(event.target).hasClass("js-ignore-close-click"))
-                        instance.Close();
-                });
+                // this.LightBox.click(function (event) {
+                //     if (!$jq(event.target).hasClass("js-ignore-close-click"))
+                //         instance.Close();
+                // });
 
                 $jq("#wrapper").HideHC();
                 this.LightBox.appendTo($jq("body"));
