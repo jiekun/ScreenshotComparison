@@ -110,7 +110,7 @@ def validate_compare_field(urls, columns):
         if isinstance(columns, str):
             if columns == '':
                 columns = 'Source\nEncode'
-            columns = columns.strip(' ')
+            columns = columns.replace(' ', '')
             columns = columns.replace('\r', '')
             columns = columns.replace(',', '\n')
             columns = columns.split('\n')
