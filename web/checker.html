@@ -2,23 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>Comparison Checker</title>
-	<link rel="stylesheet" href="css/style.css">
-	<style type="text/css">
-		.input_area {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		#column_name {
-			width: 80px;
-			height: 40px;
-		}
-		#inputimg {
-			width: 400px;
-			height: 600px;
-		}
-	</style>
+    <title>Comparison Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .input_area {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #column_name {
+            width: 80px;
+            height: 40px;
+        }
+
+        #inputimg {
+            width: 400px;
+            height: 600px;
+        }
+    </style>
 </head>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src='js/bbcode.js'></script>
@@ -27,14 +29,21 @@
     var url_string = window.location.href
     var url = new URL(url_string);
     var c = url.searchParams.get("c");
-    function show_comparison(c, u){
+
+    function show_comparison(c, u) {
         BBCode.ScreenshotComparisonToggleShow(this, c, u)
     }
-    $.get( "/api/comparison/checker/" + c, function( data ) {
-        var comparison_content = data.comparison_urls.split('\n');
-		var comparison_column = data.column.split('\n');
-		show_comparison(comparison_column, comparison_content)
-    }, "json" );
+
+    $.get("/api/comparison/checker/" + c, function (data) {
+        var code = data.code;
+        if (code === 0)
+        {
+            var comparison_content = data.data.comparison_urls.split('\n');
+            var comparison_column = data.data.column.split('\n');
+            show_comparison(comparison_column, comparison_content)
+        }
+
+    }, "json");
 
 </script>
 

@@ -38,7 +38,7 @@ var ScreenshotComparison = (function () {
                 this.MakeComparisonControl(columnNames, images);
 
                 this.LightBox.ShowHC();
-                this.LightBox.append($jq("<span class='screenshot-comparison__help'>鼠标左右滑动查看同组画面的蓝光源、压制对比。在多图对比中，您可以使用键盘上的1-9数字键快速定位到本组画面的第n张图片。</span><p><span class='screenshot-comparison__help'>对比图JS部分由PTP的开发者编写，感谢！<br>Javascript is written by PTP developers. Credit goes to them.</span></p>"));
+                this.LightBox.append($jq("<span class='screenshot-comparison__help'>鼠标左右滑动查看同组画面的不同素材对比，如蓝光源vs压制。在多图对比中，您可以使用键盘上的1-9数字键快速定位到本组画面的第n张图片。</span><p><span class='screenshot-comparison__help'>对比图JS部分由PTP的开发者编写，感谢！</span></p><p><span class='screenshot-comparison__help'>Comparison javascript is written by PTP developers. Credit goes to them.</span></p>"));
                 this.LightBox.on("scroll", function () {
                     instance.UpdateLabel();
                 });
