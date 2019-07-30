@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> a6f07a221e6b638e7cdcd8393fb9262c82914990
 # Screenshot Comparison
 ## Intro
 This tool stores the screenshot urls and display in comparison mode.
