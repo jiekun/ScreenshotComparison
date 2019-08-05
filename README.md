@@ -23,6 +23,7 @@ Javascript for comparison is written by PTP devops. All credit goes to them.
 
 ```
 ## Enviroment
+Service is running with Gunicorn(uwsgi), managed by supervisor. You will need:
 - Python3.7
 - Redis
 - Supervisor
@@ -133,7 +134,7 @@ sudo supervisorctl restart comparison-5050
 - Comparison rating system.
 - 对比图展示页面评论系统
 - Comment section.
-#### Normal Priority(AKA 正常需要做的东西)
+#### Normal Priority(AKA 正常服务需要做的东西)
 - 对比图提交页面TextArea优化。目前为网上搜索的TextArea样式，比较简陋和不友好
 - Optimize input TextArea style.
 - 后端安全。后端代码花了3个小时构建出来的，再后面用来几天下班时间修修补补，还有很多问题要处理否则有注入风险
