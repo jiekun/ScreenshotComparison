@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from flask import request, redirect, Response
-import json
 from flask import jsonify
 
-import random
-
-from config import SITE_URL
-from app import redis
 from . import server_api_mod
 from .logics import receive_urls, get_urls
 

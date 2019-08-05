@@ -7,7 +7,6 @@ import string
 import random
 import json
 import re
-from datetime import datetime
 from config import SITE_URL
 
 from app import redis
