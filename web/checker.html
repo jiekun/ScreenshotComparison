@@ -5,20 +5,18 @@
     <title>Comparison Checker</title>
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
-        .input_area {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        body {
+            background:#333 url(/image/inflicted.png) repeat;
         }
-
-        #column_name {
-            width: 80px;
-            height: 40px;
+        img {
+          opacity: 0.4;
+          filter: alpha(opacity=40); /* For IE8 and earlier */
         }
-
-        #inputimg {
-            width: 400px;
-            height: 600px;
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -36,18 +34,24 @@
 
     $.get("/api/comparison/checker/" + c, function (data) {
         var code = data.code;
-        if (code === 0)
-        {
+        if (code === 0) {
             var comparison_content = data.data.comparison_urls.split('\n');
             var comparison_column = data.data.column.split('\n');
             show_comparison(comparison_column, comparison_content)
         }
 
     }, "json");
-
 </script>
 
 <body>
+<a href="https://github.com/2014BDuck/ScreenshotComparison">
+　　<img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1;" src="image/github_r.png" >
+</a>
+
+<div id="footer" style="display:inline; white-space:nowrap;">
+    <h3>Powered by <a href="https://github.com/2014BDuck">2014BDuck</a> & PTP Developers</h3>
+</div>
+
 </body>
 
 </html>

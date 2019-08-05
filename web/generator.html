@@ -2,24 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>Comparison Generator</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/notebook.css">
-	<style type="text/css">
-		.input_area {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		#column_name {
-			width: 80px;
-			height: 40px;
-		}
-		#inputimg {
-			width: 400px;
-			height: 600px;
-		}
-	</style>
+    <title>Comparison Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notebook.css">
+    <style type="text/css">
+        .input_area {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #column_name {
+            width: 80px;
+            height: 40px;
+        }
+
+        #inputimg {
+            width: 400px;
+            height: 600px;
+        }
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <script type="text/javascript" src="js/notebook.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -27,16 +35,25 @@
 <script type="text/javascript" src='js/mousetrap.min.js'></script>
 <body>
 <div id="wrapper">
-
-	<form id="comparison" method="post" action="/api/comparison/generator/">
+    <a href="https://github.com/2014BDuck/ScreenshotComparison">
+        　　<img style="position: fixed; top: 0; left: 0; border: 0; z-index: 1;" src="image/github.png">
+    </a>
+    <form id="comparison" method="post" action="/api/comparison/generator/">
 
         <textarea placeholder="Source
-Encode" id="text" name="column" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; width:650px" form="comparison"></textarea>
-		<textarea placeholder="https://link.to.your/image.png" id="text" name="comparison_urls" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 240px; width: 650px " form="comparison"></textarea>
-		<input class="button" type="submit" value="获取对比链接">
+Encode" id="text" name="column" rows="4"
+                  style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; width:650px"
+                  form="comparison"></textarea>
+        <textarea placeholder="https://link.to.your/image.png" id="text" name="comparison_urls" rows="4"
+                  style="overflow: hidden; word-wrap: break-word; resize: none; height: 240px; width: 650px "
+                  form="comparison"></textarea>
+        <input class="button" type="submit" value="Generate">
+    </form>
 
-	</form>
+</div>
 
+<div id="footer" style="display:inline; white-space:nowrap;">
+    <h3>Powered by <a href="https://github.com/2014BDuck">2014BDuck</a> & PTP Developers</h3>
 </div>
 </body>
 
