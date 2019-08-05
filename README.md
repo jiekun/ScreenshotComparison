@@ -1,6 +1,6 @@
 # Screenshot Comparison
 ## Intro
-- A tool for comparing image.
+- A tool for comparing images.
 
 ## Demo
 - Demos show the quality in different version(master/resolution/etc) of the same moive:
@@ -98,7 +98,7 @@ vim config.py
 python manage.py runserver
 ```
 
-Running in production environments:
+Running in production environment:
 - Backend server is supervised by supervisor, so you need:
 ```
 sudo apt install supervisor
