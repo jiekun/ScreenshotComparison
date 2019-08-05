@@ -147,7 +147,7 @@ sudo supervisorctl restart comparison-5050
 - UI.
 
 ### 其他
-- 上面的todo list如果有相应的前端配合都是很快可以写完的，目前前端的方向没有时间深入调整，如果有什么好的想法或者实现欢迎联系/提PR/提issue
+- 上面的todo list如果有相应的前端配合都是很快可以写完的，目前前端的方向没有时间深入调整因此处于拖更状态，如果有什么好的想法或者实现欢迎联系/提PR/提issue
 
 ![Wechat](https://ptpimg.me/x8667v.png "Wechat") ![QQ](https://ptpimg.me/nez32x.png "QQ")
 
