@@ -1,8 +1,8 @@
 # Screenshot Comparison
 ## Demo
-Demos show the quality in different version(master / resolution / etc) of the same moive:
-https://comparison.m-team.cc/checker?c=NUGWD7CU (Passengers - UHD vs 1080p / On z4a.net)
-https://comparison.m-team.cc/checker?c=M3LHV0V8 (Independence Day - Remastered vs Old / On imgbox.com)
+- Demos show the quality in different version(master/resolution/etc) of the same moive:
+- https://comparison.m-team.cc/checker?c=NUGWD7CU (Passengers / On z4a.net)
+- https://comparison.m-team.cc/checker?c=M3LHV0V8 (Independence Day / On imgbox.com)
 
 ## Intro
 This tool stores the screenshot urls and display in comparison mode.
