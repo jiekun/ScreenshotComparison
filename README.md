@@ -32,7 +32,7 @@ Service is running with Gunicorn(uwsgi), managed by supervisor. You will need:
 - Redis
 - Supervisor
 - Packages in requirement.txt
-- virtualenv (Recommand)
+- virtualenv (Recommended)
 
 ## Deploy
 Nginx Config
