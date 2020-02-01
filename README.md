@@ -2,11 +2,6 @@
 ## Intro
 - A tool for comparing images.
 
-## Demo
-- Demos show the quality in different version(master/resolution/etc) of the same moive:
-- https://comparison.m-team.cc/checker?c=NUGWD7CU (Passengers(2016) / On z4a.net)
-- https://comparison.m-team.cc/checker?c=M3LHV0V8 (Independence Day(1996) / On imgbox.com)
-
 ## Structure
 ```
 ├── app (Web server for store and request api etc)
